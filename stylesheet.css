@@ -1,0 +1,252 @@
+body {
+    font-family: 'helvetica', sans-serif;
+    width: 375px;
+
+    * {
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+
+}
+
+ul {
+    margin: 1em;
+    list-style: none;
+}
+
+
+
+
+.nav a {
+    padding: 0.2em;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav a:hover {
+    color: #c5c2c2;
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 0.5em solid #f07e1a;
+    background-color: #bea36a;
+    width: 100vw;
+
+}
+
+img {
+    max-width: 21em;
+    margin-bottom: 2em;
+    align-content: center;
+
+}
+
+
+html {
+    background-color: lemonchiffon;
+
+}
+
+article {
+    background-color: #E4D8C1;
+    margin-bottom: 1.2em;
+    width: 23.4em;
+    box-shadow: -19px 4px 2em 0.2em #bea36a;
+
+}
+
+.taart {
+    margin-left: 15px;
+    padding: center;
+    box-shadow: -19px 4px 38px -4px #bea36a;
+}
+
+.logo {
+    width: 10em;
+    margin: 20px;
+}
+
+h1 {
+    color: #bea36a;
+    margin-left: 1.1em;
+    padding-top: 2em;
+}
+
+h2,
+h3 {
+    font-size: 1em;
+    margin-left: 1.7em;
+    margin-top: 0em;
+    color: gray;
+}
+
+* {
+    display: grid;
+}
+
+/* bron: https://css-tricks.com/dont-overthink-flexbox-grids/*/
+
+.flex-class,
+.nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #999;
+    width: 10em;
+    height: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    background-color: #bea36a;
+    color: black;
+}
+
+button:active {
+    background-color: #333333;
+    color: white;
+    box-shadow: 0 5px #667;
+    transform: translateY(4px);
+}
+
+
+
+fieldset {
+    height: 22em
+}
+
+.knop {
+    margin-left: 0em;
+    margin-top: 0.5em;
+
+}
+
+.knop:hover {
+    background-color: green;
+    color: white;
+}
+
+.knop:active {
+    background-color: green;
+    color: white;
+    box-shadow: 0 5px #667;
+    transform: translateY(4px);
+}
+
+form {
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.drop {
+
+    padding: 0.2em;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* js Dropdown styles */
+
+select {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: .5rem 0;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    padding: 1rem .5rem;
+    position: relative;
+    text-align: left;
+    font-weight: 700;
+    width: 100%;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .1);
+    border-radius: .5rem
+}
+
+select:focus {
+    background: #6598cb;
+    color: #fff;
+    outline: none;
+}
+
+.js-Dropdown-title:after {
+    border-color: currentColor transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 8px;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 1em;
+    top: 45%;
+    width: 0;
+}
+
+.js-Dropdown-list {
+    background: #fff;
+    display: none;
+    height: 0;
+    list-style: none;
+    margin: .5rem 0;
+    opacity: 0;
+    padding: .5rem;
+    position: absolute;
+    transition: .2s linear;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .1);
+    border-radius: .5rem
+}
+
+.js-Dropdown-list.is-open {
+    display: block;
+    height: auto;
+    opacity: 1;
+}
+
+.js-Dropdown-list li {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    padding: 1em .5em;
+}
+
+.js-Dropdown-list li:last-child {
+    border: none;
+}
+
+.js-Dropdown-list li:hover {
+    background-color: #eee;
+}
+
+.js-Dropdown-list li.is-selected {
+    font-weight: 700
+}
